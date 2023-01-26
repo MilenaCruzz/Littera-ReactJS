@@ -1,0 +1,22 @@
+.form_control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+   
+}
+
+.form_control button {
+    margin-top: 1.5em;
+    background-color: #c88c1c;
+    color: #000;
+    padding: 0.7em;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+.form_control button:hover{
+    background-image: linear-gradient(to left, #423e35, #d59c1c );
+}

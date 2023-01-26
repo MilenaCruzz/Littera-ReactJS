@@ -1,24 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+
+
+import About from "./components/pages/About";
+import Home from "./components/pages/Home";
+import NewReading from "./components/pages/NewReading";
+import Readings from "./components/pages/Readings";
+import Reading from './components/pages/Reading'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+          
+      <Navbar/>
+      <Switch>
+     
+        <Route  exact path="/">
+          <Home/>
+        </Route>
+
+        <Route exact path="/about">
+          <About/>
+        </Route>
+
+        <Route exact path="/readings" >
+        <Readings/>
+        </Route>
+
+        <Route exact path="/newreading" >
+        <NewReading/>
+        </Route>   
+
+         <Route exact path="/reading/:id" >
+        <Reading/>
+        </Route>   
+
+       
+      </Switch>
+  
+  
+    <Footer/>
+    </Router>
+    
+    
+
+    
   );
 }
 

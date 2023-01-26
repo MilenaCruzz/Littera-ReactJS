@@ -1,0 +1,10 @@
+.newreading_container {
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.newreading_container h1 {
+    margin-bottom: 1.5em;
+
+}

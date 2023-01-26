@@ -1,0 +1,16 @@
+.container_about {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container_about p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container_about a {
+    color:  #d59c1c;
+    text-decoration: none;
+}
+

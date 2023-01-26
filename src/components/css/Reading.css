@@ -1,0 +1,55 @@
+.reading_details {
+    padding: 2em;
+  
+}
+.reading_details h1,
+.reading_details h2,
+.reading_details p {
+    margin-bottom: 0.5em;
+    
+}
+
+.reading_details h1 {
+    padding: 0.5em;
+
+}
+.reading_details p {
+    text-align: left;
+    margin-left: 1.2em;
+}
+
+.reading_details span {
+    font-weight: bold;
+}
+
+.details_container {
+    border: 1px solid #CCC;
+    padding: 0.6em;
+    border-radius: 4px;
+    margin-bottom: 1.2em;
+    padding-bottom: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+button  {
+    margin-top: 3.5em;
+    margin-right: 1.2em;
+    background-color: #c88c1c;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    padding: 0.5em 1em;
+    height: 30px;
+    cursor: pointer;
+}
+
+.details_container button:hover{
+    background-image: linear-gradient(to left, #423e35, #d59c1c );
+}
+
+.reading_info {
+    width: 100%;
+    text-align: left;
+}
